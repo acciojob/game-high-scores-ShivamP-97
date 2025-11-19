@@ -29,6 +29,7 @@ function showScores() {
 		scores.innerHTML="<p>No scores yet</p>";
 		return;
 	}
+	storedScores.sort((a,b)=>b.score-a.score);
 	let table=`
 		<table>
 		<tr>
